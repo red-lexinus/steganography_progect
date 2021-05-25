@@ -7,13 +7,13 @@
     <x>0</x>
     <y>0</y>
     <width>506</width>
-    <height>472</height>
+    <height>484</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>506</width>
-    <height>472</height>
+    <height>484</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -31,11 +31,19 @@
       </property>
       <item>
        <widget class="QToolBox" name="toolBox">
+        <property name="font">
+         <font>
+          <family>Avernus URW</family>
+          <pointsize>18</pointsize>
+          <bold>true</bold>
+          <underline>false</underline>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true"/>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>1</number>
         </property>
         <widget class="QWidget" name="crypt">
          <property name="geometry">
@@ -43,7 +51,7 @@
            <x>0</x>
            <y>0</y>
            <width>486</width>
-           <height>392</height>
+           <height>382</height>
           </rect>
          </property>
          <attribute name="label">
@@ -201,7 +209,7 @@ p, li { white-space: pre-wrap; }
 }</string>
               </property>
               <property name="text">
-               <string>копировать</string>
+               <string>Копировать</string>
               </property>
               <property name="autoRepeatDelay">
                <number>298</number>
@@ -256,7 +264,7 @@ QPushButton:hover {
 }</string>
               </property>
               <property name="text">
-               <string>зашифровать </string>
+               <string>Зашифровать </string>
               </property>
               <property name="autoRepeatDelay">
                <number>298</number>
@@ -282,7 +290,7 @@ QPushButton:hover {
            <x>0</x>
            <y>0</y>
            <width>486</width>
-           <height>392</height>
+           <height>382</height>
           </rect>
          </property>
          <property name="styleSheet">
@@ -416,7 +424,7 @@ p, li { white-space: pre-wrap; }
 }</string>
               </property>
               <property name="text">
-               <string>копировать</string>
+               <string>Копировать</string>
               </property>
               <property name="autoRepeatDelay">
                <number>298</number>
