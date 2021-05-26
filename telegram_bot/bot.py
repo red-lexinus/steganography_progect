@@ -1,3 +1,5 @@
+import time
+
 import telebot
 from steganography_in_text import Decrypter, Crypter
 
@@ -17,8 +19,13 @@ global_markup.row('Настройка паролей и их работы')
 @bot.message_handler(commands=['start'])
 def start_message(message):
     cid = message.chat.id
-    create_user(message.from_user.id)
-    bot.send_message(cid, 'Очень приятно видеть вас в рядах защтщённых людей', reply_markup=global_markup)
+    try:
+        create_user(message.from_user.id)
+    except:
+        pass
+    bot.send_message(cid, 'Очень приятно видеть вас в рядах защищённых людей', reply_markup=global_markup)
+    bot.send_message(cid, 'В ролике ниже вы можете увидеть работу telegram бота', reply_markup=global_markup)
+    bot.send_message(cid, 'https://youtu.be/p7lEjWOUTUc', reply_markup=global_markup)
 
 
 @bot.callback_query_handler(func=lambda call: True)
@@ -200,4 +207,12 @@ def change_password(message):
         bot.send_message(message.chat.id, 'вы уже сохранили этот пароль')
 
 
-bot.polling()
+
+def running():
+    try:
+        bot.polling()
+    except:
+        time.sleep(5)
+        running()
+
+running()

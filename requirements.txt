@@ -8,5 +8,5 @@ qt5-applications==5.15.2.2.1
 qt5-tools==5.15.2.1.0.1
 keyboa==2.2.8
 pyTelegramBotAPI==3.7.9
-steganography-in-text==0.0.3
+steganography-in-text==0.1.2
 
